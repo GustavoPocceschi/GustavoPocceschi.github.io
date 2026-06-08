@@ -1,0 +1,37 @@
+[
+  {
+    "data": "26 de maio de 2026",
+    "titulo": "Por que estou reaprendendo HTML, CSS e JavaScript?",
+    "paragrafos": [
+      "Depois de mais de 10 anos em suporte e infraestrutura, decidi voltar às bases do desenvolvimento web. Este site é meu laboratório: código simples, comentado e fácil de entender enquanto estudo no IFB.",
+      "O blog usa um arquivo JSON com os textos e o JavaScript monta as publicações na tela — funciona no GitHub Pages sem precisar de PHP."
+    ]
+  },
+  {
+    "data": "15 de maio de 2026",
+    "titulo": "O que é n8n e por que uso em projetos de automação",
+    "paragrafos": [
+      "O n8n é uma ferramenta de automação que conecta sistemas sem precisar escrever muito código. No projeto de contabilidade, estou usando para ligar planilhas, e-mails e um sistema web — reduzindo trabalho manual e erros.",
+      "Se você está começando em automação, vale a pena conhecer workflows visuais antes de partir para integrações 100% em código."
+    ]
+  },
+  {
+    "data": "02 de maio de 2026",
+    "titulo": "De suporte técnico a Ciência de Dados: minha transição",
+    "paragrafos": [
+      "A experiência em TI me deu visão de ponta a ponta: redes, servidores, usuários e processos. Isso ajuda muito ao trabalhar com dados — porque você entende de onde vêm os dados e o que pode dar errado na coleta.",
+      "A graduação em Ciência de Dados no SENAC foi o passo formal; agora complemento com Desenvolvimento de Sistemas no IFB."
+    ]
+  },
+  {
+    "data": "20 de abril de 2026",
+    "titulo": "3 dicas para quem está montando portfólio no GitHub",
+    "paragrafos": [
+      "1) Escolha poucos projetos bem explicados em vez de muitos sem documentação. 2) Use um README com objetivo, tecnologias e como rodar. 3) Mantenha o GitHub atualizado — recrutadores olham a data dos commits."
+    ],
+    "link": {
+      "url": "https://github.com/GustavoPocceschi",
+      "texto": "Meu GitHub"
+    }
+  }
+]

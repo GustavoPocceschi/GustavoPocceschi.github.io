@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria de projetos de Luiz Gustavo Pocceschi - dados, BI, web e automação.">
+  <title>Galeria de Projetos | Luiz Gustavo Pocceschi</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo">Luiz Gustavo Pocceschi</a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="galeria.html" class="ativo">Galeria</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="titulo-pagina">Galeria de Projetos</h1>
+    <p class="subtitulo-pagina">Projetos que já desenvolvi e que estou desenvolvendo. Código e repositórios no GitHub.</p>
+
+    <p style="margin-bottom: 25px;">
+      <a href="https://github.com/GustavoPocceschi" class="btn" target="_blank" rel="noopener">Ver todos no GitHub</a>
+    </p>
+
+    <!--
+      Cada projeto é um <article> com duas partes:
+      1) div.projeto-imagem = foto (mostrada inteira, sem corte)
+      2) div.projeto-conteudo = texto, tags e link do GitHub
+    -->
+
+    <!-- Projeto 1 -->
+    <article class="projeto">
+      <div class="projeto-imagem">
+        <img src="assets/imagens/2025-evento-cnre.jpeg" alt="Projeto de BI judiciário">
+      </div>
+      <div class="projeto-conteudo">
+        <span class="status status--concluido">Concluído</span>
+        <h2>Análise de Desempenho Judiciário</h2>
+        <p>Painéis de Business Intelligence com milhões de registros do CNJ para avaliar a performance dos Juizados Especiais do TJDFT.</p>
+        <p class="disciplinas"><strong>Disciplinas:</strong> Ciência de Dados, Estatística, Engenharia de Dados</p>
+        <p class="tecnologias"><strong>Tecnologias:</strong></p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">CNJ</span>
+        </div>
+        <p style="margin-top: 15px;">
+          <a href="https://github.com/GustavoPocceschi" class="btn btn--outline" target="_blank" rel="noopener">Ver no GitHub</a>
+        </p>
+      </div>
+    </article>
+
+    <!-- Projeto 2 -->
+    <article class="projeto">
+      <div class="projeto-imagem">
+        <img src="assets/imagens/cartao-1.png" alt="Projeto de segmentação Olist">
+      </div>
+      <div class="projeto-conteudo">
+        <span class="status status--concluido">Concluído</span>
+        <h2>Segmentação de Clientes (Olist)</h2>
+        <p>Aplicação de algoritmos de agrupamento no dataset público da Olist para identificar perfis de consumo no e-commerce.</p>
+        <p class="disciplinas"><strong>Disciplinas:</strong> Ciência de Dados, Machine Learning</p>
+        <p class="tecnologias"><strong>Tecnologias:</strong></p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Kaggle</span>
+        </div>
+        <p style="margin-top: 15px;">
+          <a href="https://github.com/GustavoPocceschi" class="btn btn--outline" target="_blank" rel="noopener">Ver no GitHub</a>
+        </p>
+      </div>
+    </article>
+
+    <!-- Projeto 3 -->
+    <article class="projeto">
+      <div class="projeto-imagem">
+        <img src="assets/imagens/2018-QA-Centralit.jpeg" alt="Projeto plataforma EAD">
+      </div>
+      <div class="projeto-conteudo">
+        <span class="status status--concluido">Concluído</span>
+        <h2>Plataforma de Ensino EAD (LMS)</h2>
+        <p>Plataforma web customizada para ensino a distância, com foco em performance e integração de streaming de vídeo.</p>
+        <p class="disciplinas"><strong>Disciplinas:</strong> Desenvolvimento Web, Arquitetura de Sistemas</p>
+        <p class="tecnologias"><strong>Tecnologias:</strong></p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">LMS</span>
+        </div>
+        <p style="margin-top: 15px;">
+          <a href="https://github.com/GustavoPocceschi" class="btn btn--outline" target="_blank" rel="noopener">Ver no GitHub</a>
+        </p>
+      </div>
+    </article>
+
+    <!-- Projeto 4 -->
+    <article class="projeto">
+      <div class="projeto-imagem">
+        <img src="assets/imagens/cartao-2.png" alt="Projeto automação contábil">
+      </div>
+      <div class="projeto-conteudo">
+        <span class="status status--andamento">Em desenvolvimento</span>
+        <h2>Automação e Governança Contábil</h2>
+        <p>Boas práticas ITIL combinadas a workflows no n8n para integrar rotinas de um escritório de contabilidade a um sistema web.</p>
+        <p class="disciplinas"><strong>Disciplinas:</strong> Governança de TI, Automação de Processos</p>
+        <p class="tecnologias"><strong>Tecnologias:</strong></p>
+        <div class="tags">
+          <span class="tag">n8n</span>
+          <span class="tag">ITIL</span>
+          <span class="tag">APIs</span>
+          <span class="tag">Workflows</span>
+        </div>
+        <p style="margin-top: 15px;">
+          <a href="https://github.com/GustavoPocceschi" class="btn btn--outline" target="_blank" rel="noopener">Ver no GitHub</a>
+        </p>
+      </div>
+    </article>
+
+    <!-- Projeto 5 - este site -->
+    <article class="projeto">
+      <div class="projeto-imagem">
+        <img src="assets/imagens/caricatura.png" alt="Site portfólio">
+      </div>
+      <div class="projeto-conteudo">
+        <span class="status status--andamento">Em desenvolvimento</span>
+        <h2>Site Portfólio Pessoal</h2>
+        <p>Este site que você está visitando — feito para aprender HTML, CSS e JavaScript na prática, publicado no GitHub Pages.</p>
+        <p class="disciplinas"><strong>Disciplinas:</strong> Desenvolvimento Web, Lógica de Programação</p>
+        <p class="tecnologias"><strong>Tecnologias:</strong></p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">JSON</span>
+          <span class="tag">GitHub Pages</span>
+        </div>
+        <p style="margin-top: 15px;">
+          <a href="https://github.com/GustavoPocceschi" class="btn btn--outline" target="_blank" rel="noopener">Ver no GitHub</a>
+        </p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p style="color: var(--texto-claro); margin-bottom: 15px;">Fale comigo pelo WhatsApp ou e-mail:</p>
+      <div class="contatos">
+        <a href="https://wa.me/5561991636308?text=Ol%C3%A1%20Gustavo%2C%20vi%20seu%20site%20e%20gostaria%20de%20conversar." class="whatsapp" target="_blank" rel="noopener">
+          WhatsApp: (61) 99163-6308
+        </a>
+        <a href="mailto:luizgustavopocceschi@hotmail.com">
+          E-mail: luizgustavopocceschi@hotmail.com
+        </a>
+        <a href="https://github.com/GustavoPocceschi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/gustavopocceschi" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="copyright">&copy; <span id="ano">2026</span> Luiz Gustavo de Oliveira Pocceschi</p>
+      <p class="links-rodape">
+        <a href="index.html">Início</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="blog.html">Blog</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

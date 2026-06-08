@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog de Luiz Gustavo Pocceschi - curiosidades e novidades sobre TI.">
+  <title>Blog | Luiz Gustavo Pocceschi</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo">Luiz Gustavo Pocceschi</a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="blog.html" class="ativo">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="titulo-pagina">Blog</h1>
+    <p class="subtitulo-pagina">Curiosidades, novidades e registros da minha jornada em programação e TI.</p>
+
+    <!--
+      Os posts NÃO ficam mais aqui no HTML.
+      O JavaScript (blog.js) lê assets/data/posts.json e monta a lista abaixo.
+      Para publicar um post novo, edite o arquivo posts.json.
+    -->
+    <div id="lista-posts">
+      <p class="blog-carregando">Carregando posts...</p>
+    </div>
+
+    <p class="blog-dica">
+      <strong>Como adicionar um post:</strong> edite o arquivo
+      <code>assets/data/posts.json</code>, salve e envie para o GitHub (<code>git add .</code>, <code>git commit</code>, <code>git push</code>).
+    </p>
+
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p style="color: var(--texto-claro); margin-bottom: 15px;">Fale comigo pelo WhatsApp ou e-mail:</p>
+      <div class="contatos">
+        <a href="https://wa.me/5561991636308?text=Ol%C3%A1%20Gustavo%2C%20vi%20seu%20site%20e%20gostaria%20de%20conversar." class="whatsapp" target="_blank" rel="noopener">
+          WhatsApp: (61) 99163-6308
+        </a>
+        <a href="mailto:luizgustavopocceschi@hotmail.com">
+          E-mail: luizgustavopocceschi@hotmail.com
+        </a>
+        <a href="https://github.com/GustavoPocceschi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/gustavopocceschi" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="copyright">&copy; <span id="ano">2026</span> Luiz Gustavo de Oliveira Pocceschi</p>
+      <p class="links-rodape">
+        <a href="index.html">Início</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="blog.html">Blog</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+</html>

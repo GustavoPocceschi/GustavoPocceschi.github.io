@@ -1,0 +1,531 @@
+/* ============================================
+   Estilos do site - versão iniciante
+   Luiz Gustavo Pocceschi
+   ============================================ */
+
+/* Cores e fontes usadas em todo o site */
+:root {
+  --fundo: #111827;
+  --fundo-card: #1f2937;
+  --texto: #f3f4f6;
+  --texto-claro: #9ca3af;
+  --azul: #38bdf8;
+  --azul-escuro: #0ea5e9;
+  --borda: #374151;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--azul-escuro);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container centralizado */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ========== CABEÇALHO ========== */
+.cabecalho {
+  background-color: var(--fundo-card);
+  border-bottom: 2px solid var(--borda);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: var(--azul);
+}
+
+/* Menu de navegação */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: var(--texto-claro);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: var(--texto);
+  background-color: var(--borda);
+  text-decoration: none;
+}
+
+/* ========== CONTEÚDO PRINCIPAL ========== */
+main {
+  padding: 30px 0 50px;
+}
+
+.titulo-pagina {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo-pagina {
+  color: var(--texto-claro);
+  margin-bottom: 30px;
+}
+
+/* Seções */
+.secao {
+  margin-bottom: 40px;
+}
+
+.secao h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--azul);
+  display: inline-block;
+}
+
+/* ========== CARDS (posts, projetos, blog) ========== */
+.cards {
+  display: grid;
+  gap: 20px;
+}
+
+/* Em telas maiores, 2 colunas */
+@media (min-width: 600px) {
+  .cards--duas-colunas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background-color: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 20px;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  border-color: var(--azul);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card .fonte {
+  font-size: 0.85rem;
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+
+.card .data {
+  font-size: 0.8rem;
+  color: var(--texto-claro);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--texto-claro);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Botão simples */
+.btn {
+  display: inline-block;
+  background-color: var(--azul);
+  color: #111827;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--azul-escuro);
+  color: #111827;
+  text-decoration: none;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--azul);
+  border: 2px solid var(--azul);
+}
+
+.btn--outline:hover {
+  background-color: var(--azul);
+  color: #111827;
+}
+
+/* ========== GALERIA DE PROJETOS ========== */
+.projeto {
+  background-color: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+/*
+  Área da imagem do projeto:
+  - object-fit: contain = mostra a foto INTEIRA, sem cortar
+  - fundo escuro preenche o espaço vazio ao redor
+  - max-height limita altura em telas grandes
+*/
+.projeto-imagem {
+  background-color: #0b1018;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+
+.projeto-imagem img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.projeto .projeto-conteudo {
+  padding: 20px;
+}
+
+.projeto .status {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.status--concluido {
+  background-color: #065f46;
+  color: #6ee7b7;
+}
+
+.status--andamento {
+  background-color: #78350f;
+  color: #fcd34d;
+}
+
+.projeto .disciplinas,
+.projeto .tecnologias {
+  margin: 12px 0;
+}
+
+.projeto .disciplinas strong,
+.projeto .tecnologias strong {
+  color: var(--texto);
+}
+
+.projeto .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.projeto .tag {
+  background-color: var(--borda);
+  color: var(--texto-claro);
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* ========== LINHA DO TEMPO (currículo) ========== */
+.timeline {
+  list-style: none;
+  border-left: 3px solid var(--azul);
+  padding-left: 25px;
+  margin-left: 10px;
+}
+
+.timeline li {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Bolinha na linha do tempo */
+.timeline li::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: var(--azul);
+  border-radius: 50%;
+  position: absolute;
+  left: -32px;
+  top: 5px;
+}
+
+.timeline .periodo {
+  color: var(--azul);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.timeline h3 {
+  margin: 5px 0;
+}
+
+.timeline p {
+  color: var(--texto-claro);
+  font-size: 0.95rem;
+}
+
+/* ========== CERTIFICAÇÕES (lista organizada) ========== */
+.lista-certificacoes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lista-certificacoes li {
+  background-color: var(--fundo);
+  border: 1px solid var(--borda);
+  border-left: 4px solid var(--azul);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.lista-certificacoes strong {
+  display: block;
+  color: var(--texto);
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.lista-certificacoes span {
+  display: block;
+  color: var(--texto-claro);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ========== FOTOS DA JORNADA (currículo) ========== */
+.galeria-jornada {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .galeria-jornada {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.galeria-jornada .card-foto {
+  padding: 0;
+  overflow: hidden;
+}
+
+.galeria-jornada .foto-jornada {
+  background-color: #0b1018;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeria-jornada .foto-jornada img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.galeria-jornada .legenda-foto {
+  padding: 15px;
+  color: var(--texto-claro);
+  margin: 0;
+}
+
+/* ========== BLOG (posts próprios) ========== */
+.post-blog {
+  background-color: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.post-blog .data-post {
+  color: var(--texto-claro);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.post-blog h3 {
+  margin-bottom: 12px;
+}
+
+.post-blog p {
+  color: var(--texto-claro);
+}
+
+/* Mensagens do blog (carregando / erro / dica) */
+.blog-carregando,
+.blog-erro,
+.blog-dica {
+  color: var(--texto-claro);
+  font-size: 0.95rem;
+}
+
+.blog-dica {
+  margin-top: 25px;
+  padding: 14px 16px;
+  background-color: var(--fundo-card);
+  border-left: 4px solid var(--azul);
+  border-radius: 4px;
+}
+
+.blog-dica code {
+  background-color: var(--borda);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.blog-erro {
+  color: #f87171;
+}
+
+/* Apresentação na home */
+.apresentacao {
+  background-color: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.apresentacao img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--azul);
+}
+
+.apresentacao .texto {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ========== RODAPÉ ========== */
+.rodape {
+  background-color: var(--fundo-card);
+  border-top: 2px solid var(--borda);
+  padding: 30px 0;
+  margin-top: 20px;
+}
+
+.rodape h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contatos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--borda);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: var(--texto);
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contatos a:hover {
+  background-color: var(--azul);
+  color: #111827;
+  text-decoration: none;
+}
+
+.contatos .whatsapp:hover {
+  background-color: #25d366;
+  color: white;
+}
+
+.rodape .copyright {
+  color: var(--texto-claro);
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+
+.rodape .links-rodape {
+  margin-top: 10px;
+}
+
+.rodape .links-rodape a {
+  margin-right: 15px;
+  font-size: 0.9rem;
+}

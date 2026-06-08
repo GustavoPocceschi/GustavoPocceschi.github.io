@@ -1,0 +1,7 @@
+# Arquivos do Windows que não precisam ir pro GitHub
+Thumbs.db
+Desktop.ini
+
+# Arquivos temporários de editores
+*.tmp
+*~
